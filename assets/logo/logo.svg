@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="rushGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Icon Section -->
+  <g transform="translate(4, 4)">
+    <!-- Base container -->
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="#0E1626" stroke="url(#logoGrad)" stroke-width="2" />
+    
+    <!-- Pixels decorative -->
+    <rect x="8" y="8" width="5" height="5" rx="1" fill="#A855F7" opacity="0.9" />
+    <rect x="35" y="35" width="5" height="5" rx="1" fill="#06B6D4" opacity="0.9" />
+    
+    <!-- Play / Rush arrow -->
+    <path d="M17 15L35 24L17 33V15Z" fill="url(#logoGrad)" filter="url(#logoGlow)" />
+    <!-- White center core -->
+    <rect x="21" y="21.5" width="5" height="5" rx="1.2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Typography: PIXELRUSH -->
+  <!-- "PIXEL" in bold white/silver -->
+  <text x="64" y="34" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" letter-spacing="1.5" fill="#F8FAFC">
+    PIXEL<tspan fill="url(#rushGrad)">RUSH</tspan>
+  </text>
+  
+  <!-- Subtle Tagline -->
+  <text x="65" y="47" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" letter-spacing="2.5" fill="#94A3B8">
+    PLAY • EXPLORE • REPEAT
+  </text>
+  
+  <!-- Modern accent speed line -->
+  <rect x="180" y="43" width="44" height="2" rx="1" fill="url(#logoGrad)" opacity="0.8" />
+</svg>

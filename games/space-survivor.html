@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Space Survivor — Play Free Online | PixelRush</title>
+  <meta name="description" content="Play Space Survivor for free on PixelRush. Command an advanced starfighter, dodge asteroid fields, defeat hostile alien drones, and survive the cosmic void.">
+  <meta name="theme-color" content="#060911">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Space Survivor — PixelRush Browser Games">
+  <meta property="og:description" content="Play Space Survivor online in your browser. Fast-paced action survival space shooter.">
+  <meta property="og:image" content="../assets/thumbnails/space-survivor.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Logo -->
+      <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+        <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#browse" class="nav-link">Browse Games</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="../pages/about.html" class="nav-link">About</a></li>
+          <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="../index.html#browse" class="nav-search-btn" id="nav-search-btn" aria-label="Search games">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </a>
+
+        <a href="../index.html#browse" class="btn btn-secondary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Back to Games
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#browse" class="mobile-nav-link">Browse Games</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="../pages/about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="../pages/contact.html" class="mobile-nav-link">Contact &amp; FAQ</a></li>
+      </ul>
+      <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+        <a href="../index.html#browse" class="btn btn-secondary" style="width: 100%;">
+          Back to Game Catalogue
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <!-- =====================================================================
+           2. BREADCRUMBS & TITLE BANNER
+           ===================================================================== -->
+      <div class="game-view-header">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumbs-separator">/</span>
+          <a href="../index.html#browse">Games</a>
+          <span class="breadcrumbs-separator">/</span>
+          <span class="breadcrumbs-current" aria-current="page">Space Survivor</span>
+        </nav>
+
+        <!-- Title & Category Bar -->
+        <div class="game-title-bar">
+          <div class="game-title-wrap">
+            <h1 class="game-title-main">Space Survivor</h1>
+            <span class="badge badge-purple">ACTION / SURVIVAL</span>
+            <span class="badge badge-success"><span class="badge-dot"></span>PLAYABLE NOW</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="../index.html#browse" class="btn btn-secondary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+              Back to Games
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- =====================================================================
+           3. RESPONSIVE GAME PLAYER AREA (IFRAME CONTAINER)
+           ===================================================================== -->
+      <section aria-label="Game Player">
+        <div class="game-player-wrapper" id="game-player-wrapper">
+          
+          <!-- Responsive 16:9 Aspect Ratio Frame Container -->
+          <div class="game-iframe-box">
+            
+            <!-- Loading Indicator Overlay -->
+            <div class="game-loader-overlay" id="game-loader-overlay">
+              <div class="game-spinner"></div>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 600;">
+                Initializing Space Survivor...
+              </p>
+            </div>
+
+            <!-- Embedded Live Game -->
+            <iframe 
+              src="https://space-survivor.pages.dev/" 
+              id="game-iframe"
+              class="game-iframe"
+              title="Space Survivor - Browser Game on PixelRush"
+              allow="fullscreen; autoplay; gamepad; keyboard-map"
+              allowfullscreen
+              loading="eager"
+            ></iframe>
+          </div>
+
+          <!-- Game Player Toolbar -->
+          <div class="game-player-toolbar">
+            
+            <div class="game-toolbar-left">
+              <!-- Fullscreen Button -->
+              <button type="button" class="toolbar-btn" id="fullscreen-btn" aria-label="Toggle Fullscreen Mode">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                </svg>
+                <span>Fullscreen</span>
+              </button>
+
+              <!-- Theater / Wide Mode Toggle -->
+              <button type="button" class="toolbar-btn" id="theater-btn" aria-label="Toggle Theater Mode">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="6" y1="4" x2="6" y2="20"></line>
+                  <line x1="18" y1="4" x2="18" y2="20"></line>
+                </svg>
+                <span>Theater Mode</span>
+              </button>
+
+              <!-- Reload Frame Button -->
+              <button type="button" class="toolbar-btn" id="reload-btn" aria-label="Reload Game">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <polyline points="1 20 1 14 7 14"></polyline>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                <span>Reload</span>
+              </button>
+            </div>
+
+            <div class="game-toolbar-right">
+              <!-- Fallback Direct Link Button -->
+              <a 
+                href="https://space-survivor.pages.dev/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="toolbar-btn"
+                title="If the embed fails or on mobile devices, open directly in a new window"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Open in New Tab ↗</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Fallback Information Banner -->
+        <div class="game-fallback-banner">
+          <div>
+            <strong>Notice:</strong> Space Survivor is hosted natively at <code>space-survivor.pages.dev</code>. If the embedded game doesn't load or your browser restricts cross-origin canvas rendering:
+          </div>
+          <a href="https://space-survivor.pages.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-cyan">
+            Launch Game Directly in New Tab ↗
+          </a>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           4. CONTROLS, INSTRUCTIONS & GAME INFORMATION
+           ===================================================================== -->
+      <section class="game-details-layout">
+        
+        <!-- Left Column: Controls & Gameplay Guide -->
+        <div class="game-content-panel">
+          
+          <!-- Controls Panel -->
+          <article class="game-info-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-primary)" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+                <line x1="6" y1="12" x2="10" y2="12"></line>
+                <line x1="8" y1="10" x2="8" y2="14"></line>
+                <circle cx="16" cy="11" r="1"></circle>
+                <circle cx="18" cy="13" r="1"></circle>
+              </svg>
+              <span>Controls &amp; Instructions</span>
+            </h3>
+
+            <div class="controls-grid">
+              
+              <div class="control-item">
+                <div class="control-keys">
+                  <kbd>W</kbd>
+                  <kbd>A</kbd>
+                  <kbd>S</kbd>
+                  <kbd>D</kbd>
+                </div>
+                <span class="control-action">360° Omnidirectional Propulsion</span>
+              </div>
+
+              <div class="control-item">
+                <div class="control-keys">
+                  <kbd>↑</kbd>
+                  <kbd>←</kbd>
+                  <kbd>↓</kbd>
+                  <kbd>→</kbd>
+                </div>
+                <span class="control-action">Alternative Directional Navigation</span>
+              </div>
+
+              <div class="control-item">
+                <div class="control-keys">
+                  <kbd>Space</kbd>
+                </div>
+                <span class="control-action">Deploy EMP Shockwave (Clears bullets, stuns enemies)</span>
+              </div>
+
+              <div class="control-item">
+                <div class="control-keys">
+                  <span class="badge badge-cyan">AUTOMATIC</span>
+                </div>
+                <span class="control-action">Blasters automatically lock &amp; fire at nearest hostiles</span>
+              </div>
+
+              <div class="control-item">
+                <div class="control-keys">
+                  <kbd>P</kbd>
+                  <span style="color: var(--text-muted); font-size: 0.8rem;">or</span>
+                  <kbd>Esc</kbd>
+                </div>
+                <span class="control-action">Tactical Pause / Resume</span>
+              </div>
+
+              <div class="control-item">
+                <div class="control-keys">
+                  <span class="badge badge-purple">TOUCH</span>
+                </div>
+                <span class="control-action">Left thumb joystick to fly, right thumb EMP trigger</span>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- About Game & Tips Panel -->
+          <article class="game-info-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--purple-glow)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>About Space Survivor</span>
+            </h3>
+
+            <div style="color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem;">
+              <p>
+                <strong>Space Survivor</strong> is an arcade spaceship survival action game. Pilot your scout vessel through hostile cosmic sectors while evading relentless waves of alien ships. Your main blaster turret automatically targets and fires at approaching threats, allowing you to focus on tactical positioning and dodging incoming enemy plasma.
+              </p>
+              
+              <h4 style="color: var(--text-white); font-size: 1.05rem; margin-top: 0.5rem;">Key Combat Protocols &amp; Intel:</h4>
+              <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><strong style="color: var(--cyan-primary);">Deploy EMP Shockwave:</strong> Press <kbd>Space</kbd> when cornered or targeted by heavy bullet spreads to disintegrate enemy projectiles and stun nearby hostiles. EMP recharges on a timed cooldown.</li>
+                <li><strong style="color: var(--cyan-primary);">Harvest XP Energy Cores:</strong> Vaporized enemy vessels drop glowing XP cores. Collect them to level up your reactor and select <strong>System Upgrades</strong> (Multi-shot lasers, overcharged plasma, defensive energy aegis, enhanced thrusters, and magnet fields).</li>
+                <li><strong style="color: var(--cyan-primary);">Hostile Ship Intel:</strong> Fast <em>Scout Interceptors</em> close distance directly, <em>Armored Dreadnoughts</em> absorb heavy damage, <em>Sniper Frigates</em> fire high-velocity railgun bolts from a distance, and <em>Swarm Stingers</em> attack in aggressive packs.</li>
+                <li><strong style="color: var(--cyan-primary);">Maintain Evasion Corridors:</strong> Avoid pinning your vessel against the boundaries of the playfield to preserve 360-degree escape routes.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Right Column: Game Specifications & Metadata -->
+        <aside class="game-sidebar-specs" aria-label="Game Specifications">
+          
+          <div class="specs-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.25rem;">Game Specs</h3>
+            
+            <div class="spec-row">
+              <span class="spec-label">Genre</span>
+              <span class="spec-value">Action / Survival</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Firing Mode</span>
+              <span class="spec-value">Auto-Targeting Turret</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Special Ability</span>
+              <span class="spec-value">EMP Shockwave ([Space])</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Platform</span>
+              <span class="spec-value">Browser (HTML5 / WebGL)</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Release Year</span>
+              <span class="spec-value">2026</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Status</span>
+              <span class="badge badge-success"><span class="badge-dot"></span>Playable</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-label">Cloud Host</span>
+              <span class="spec-value" style="font-family: var(--font-mono); font-size: 0.75rem;">Cloudflare Pages</span>
+            </div>
+
+            <div style="margin-top: 0.5rem;">
+              <a href="../index.html#browse" class="btn btn-secondary" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Back to Game Catalogue
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Share / Help Widget -->
+          <div class="specs-card" style="background: rgba(14, 22, 38, 0.5);">
+            <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--text-white);">Need Assistance?</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Encountered a bug or have gameplay feedback? Send us a quick note through our contact portal.
+            </p>
+            <a href="../pages/contact.html" class="btn btn-outline-purple btn-sm" style="width: 100%;">
+              Submit Game Feedback
+            </a>
+          </div>
+
+        </aside>
+
+      </section>
+
+      <!-- =====================================================================
+           5. RELATED GAMES SECTION
+           ===================================================================== -->
+      <section class="section" id="related-games-section">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>More to Play</span>
+          </div>
+          <h2 class="section-title">Related Games</h2>
+          <p class="section-desc">Space Survivor is our featured launch title for Version 1.0. Future original releases will be showcased here.</p>
+        </div>
+
+        <!-- Populated via script.js -->
+        <div class="games-grid" id="related-games-grid">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       6. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+            <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+          </a>
+          <p class="footer-brand-desc">
+            PixelRush is a modern browser gaming portal built for fast, frictionless gaming. Discover curated indie titles, launch them directly in your browser, and play anywhere.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--cyan-primary); font-weight: 700;">
+            TAGLINE: Play. Explore. Repeat.
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="../index.html#browse" class="footer-link">Browse Games</a></li>
+            <li><a href="../index.html#categories" class="footer-link">Categories</a></li>
+            <li><a href="../pages/about.html" class="footer-link">About PixelRush</a></li>
+            <li><a href="../pages/contact.html" class="footer-link">Contact &amp; FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Games -->
+        <div>
+          <h4 class="footer-col-title">Games</h4>
+          <ul class="footer-links">
+            <li><a href="space-survivor.html" class="footer-link">Space Survivor (Active)</a></li>
+            <li><a href="../pages/about.html#roadmap" class="footer-link" style="color: var(--text-muted);">Future Titles (On Roadmap)</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Info -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link" style="color: var(--text-muted);">Version 1.0 (Static)</span></li>
+            <li><span class="footer-link" style="color: var(--text-muted);">Cloudflare Pages Edge</span></li>
+            <li><a href="../pages/about.html#roadmap" class="footer-link">Roadmap &amp; Updates</a></li>
+            <li><a href="../pages/contact.html" class="footer-link">Support &amp; Feedback</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PixelRush. All rights reserved. Play. Explore. Repeat.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="../pages/about.html" class="footer-link">About</a>
+          <a href="../pages/contact.html" class="footer-link">Contact</a>
+          <a href="../index.html" class="footer-link">Privacy Policy</a>
+          <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span>Top</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+</body>
+</html>

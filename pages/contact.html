@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Contact &amp; Support — PixelRush | Browser Gaming Portal</title>
+  <meta name="description" content="Get in touch with the PixelRush team. Send feedback, report gameplay issues, explore FAQs, or submit indie game ideas.">
+  <meta name="theme-color" content="#060911">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Logo -->
+      <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+        <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#browse" class="nav-link">Browse Games</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="../index.html#browse" class="nav-search-btn" id="nav-search-btn" aria-label="Search games">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </a>
+
+        <a href="../games/space-survivor.html" class="btn btn-sm btn-cyan">
+          Play Now
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#browse" class="mobile-nav-link">Browse Games</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link active">Contact &amp; FAQ</a></li>
+      </ul>
+      <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+        <a href="../games/space-survivor.html" class="btn btn-primary" style="width: 100%;">
+          Play Space Survivor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <!-- =====================================================================
+           2. CONTACT HERO
+           ===================================================================== -->
+      <section class="page-hero">
+        <div class="badge badge-cyan" style="margin-bottom: 1rem;">
+          <span class="badge-dot"></span>
+          SUPPORT &amp; FEEDBACK
+        </div>
+        <h1 class="page-hero-title">
+          WE WOULD LOVE TO <span class="gradient-text-purple-cyan">HEAR FROM YOU</span>
+        </h1>
+        <p class="page-hero-sub">
+          Have feedback on Space Survivor, want to suggest a new game genre, or spotted a bug? Send us a message or browse the player FAQ below.
+        </p>
+      </section>
+
+      <!-- =====================================================================
+           3. CONTACT FORM & FAQ GRID
+           ===================================================================== -->
+      <section class="contact-layout">
+        
+        <!-- Left: Interactive Contact Form -->
+        <div class="contact-card">
+          <div style="margin-bottom: 1.5rem;">
+            <h2 style="font-size: 1.45rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.35rem;">
+              Send Feedback
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+              Feedback form for game impressions and portal suggestions.
+            </p>
+          </div>
+
+          <!-- Development Notice -->
+          <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: var(--radius-md); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div style="font-size: 0.875rem; color: #FDE68A; line-height: 1.5;">
+              <strong>Notice:</strong> Direct message submission is currently under development for Version 1.0. Form transmission is temporarily disabled while backend services are being prepared.
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input 
+                type="text" 
+                id="contact-name" 
+                class="form-control" 
+                placeholder="e.g. Pilot" 
+                disabled
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                class="form-control" 
+                placeholder="pilot@example.com" 
+                disabled
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Topic / Subject</label>
+              <select id="contact-subject" class="form-control" disabled style="cursor: not-allowed;">
+                <option value="feedback">General Portal Feedback</option>
+                <option value="bug">Report an Issue in Space Survivor</option>
+                <option value="suggestion">Suggest a Future Game Genre</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea 
+                id="contact-message" 
+                class="form-control" 
+                rows="5" 
+                placeholder="Form submissions are currently disabled during Version 1.0 setup." 
+                disabled
+              ></textarea>
+            </div>
+
+            <button type="button" class="btn btn-secondary btn-lg" disabled style="margin-top: 0.5rem; width: 100%; opacity: 0.6; cursor: not-allowed;">
+              Submission Temporarily Disabled (Under Development)
+            </button>
+
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
+              Backend messaging service will be enabled in a future platform release.
+            </p>
+
+          </form>
+        </div>
+
+        <!-- Right: FAQ Accordion -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div>
+            <h2 style="font-size: 1.45rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.35rem;">
+              Frequently Asked Questions
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+              Quick answers about playing games on PixelRush.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            
+            <!-- FAQ 1 -->
+            <div class="faq-item active">
+              <button type="button" class="faq-question">
+                <span>Are all games on PixelRush completely free?</span>
+                <span class="faq-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                Yes, 100%. All games featured on PixelRush are completely free to play directly in your web browser. There are no paywalls, hidden in-app purchases, or subscription fees in Version 1.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question">
+                <span>Do I need to install software or create an account?</span>
+                <span class="faq-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                No installations, no plugins, and no sign-up forms required. Simply click on Space Survivor or any playable game and it boots up immediately inside modern standards-compliant browsers.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question">
+                <span>Can I play on smartphones and tablets?</span>
+                <span class="faq-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                Yes! The entire PixelRush portal is built with responsive mobile-first architecture. The game frame automatically fits your mobile screen. For the optimal experience on mobile, rotate your device to landscape or tap the Fullscreen button.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question">
+                <span>What games are currently available on PixelRush?</span>
+                <span class="faq-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                In this Version 1.0 release, Space Survivor is our featured playable title. Additional original browser games will be introduced in subsequent platform updates as they are developed.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Game Banner Box -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 800; color: #FFFFFF;">Ready to dive in?</h3>
+              <p style="color: var(--text-secondary); font-size: 0.85rem;">Blast off into Space Survivor now.</p>
+            </div>
+            <a href="../games/space-survivor.html" class="btn btn-cyan btn-sm">
+              Play Space Survivor
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       4. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+            <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+          </a>
+          <p class="footer-brand-desc">
+            PixelRush is a modern browser gaming portal built for fast, frictionless gaming. Discover curated indie titles, launch them directly in your browser, and play anywhere.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--cyan-primary); font-weight: 700;">
+            TAGLINE: Play. Explore. Repeat.
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="../index.html#browse" class="footer-link">Browse Games</a></li>
+            <li><a href="../index.html#categories" class="footer-link">Categories</a></li>
+            <li><a href="about.html" class="footer-link">About PixelRush</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Games -->
+        <div>
+          <h4 class="footer-col-title">Games</h4>
+          <ul class="footer-links">
+            <li><a href="../games/space-survivor.html" class="footer-link">Space Survivor (Active)</a></li>
+            <li><a href="about.html#roadmap" class="footer-link" style="color: var(--text-muted);">Future Titles (On Roadmap)</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Info -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link" style="color: var(--text-muted);">Version 1.0 (Static)</span></li>
+            <li><span class="footer-link" style="color: var(--text-muted);">Cloudflare Pages Edge</span></li>
+            <li><a href="about.html#roadmap" class="footer-link">Roadmap &amp; Updates</a></li>
+            <li><a href="contact.html" class="footer-link">Support &amp; Feedback</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PixelRush. All rights reserved. Play. Explore. Repeat.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="../index.html" class="footer-link">Privacy Policy</a>
+          <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span>Top</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+</body>
+</html>

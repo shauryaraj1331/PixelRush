@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="stratBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="tacticalGrid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="stratGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#stratBg)" />
+
+  <!-- Planetary Ring System on right -->
+  <circle cx="680" cy="180" r="140" fill="#1E293B" stroke="#334155" stroke-width="2" />
+  <ellipse cx="680" cy="180" rx="220" ry="40" fill="none" stroke="#64748B" stroke-width="6" opacity="0.4" transform="rotate(-25 680 180)" />
+  <ellipse cx="680" cy="180" rx="240" ry="45" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.6" transform="rotate(-25 680 180)" />
+
+  <!-- Tactical Radar Rings & Coordinate Axes -->
+  <g transform="translate(350, 200)" stroke="#0284C7" stroke-opacity="0.4" fill="none">
+    <circle cx="0" cy="0" r="60" stroke-dasharray="3 3" />
+    <circle cx="0" cy="0" r="120" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="180" stroke-dasharray="6 6" />
+    <line x1="-220" y1="0" x2="220" y2="0" />
+    <line x1="0" y1="-180" x2="0" y2="180" />
+    <!-- Rotating Radar Sweep Cone -->
+    <path d="M0,0 L160,-80 A 180 180 0 0 1 180,0 Z" fill="#00F0FF" fill-opacity="0.08" stroke="none" />
+    <line x1="0" y1="0" x2="180" y2="0" stroke="#00F0FF" stroke-width="2" opacity="0.7" />
+  </g>
+
+  <!-- Fleet Ships (Holographic Tactical Markers) -->
+  <!-- Flagship Cruiser -->
+  <g transform="translate(310, 160)" stroke="#38BDF8" fill="#0F172A">
+    <polygon points="0,-25 15,10 0,6 -15,10" stroke-width="2" filter="url(#stratGlow)" fill="#0369A1" />
+    <!-- Target Box -->
+    <rect x="-24" y="-32" width="48" height="48" fill="none" stroke="#00F0FF" stroke-width="1" stroke-dasharray="4 2" />
+    <text x="28" y="-12" font-family="monospace" font-size="10" fill="#38BDF8">CMD-01 [ACTIVE]</text>
+  </g>
+
+  <!-- Escort Frigates -->
+  <g transform="translate(230, 230)" fill="#7C3AED" stroke="#C084FC">
+    <polygon points="0,-15 10,8 0,4 -10,8" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="16" y="4" font-family="monospace" font-size="9" fill="#A855F7">ESCORT-A</text>
+  </g>
+
+  <g transform="translate(420, 240)" fill="#7C3AED" stroke="#C084FC">
+    <polygon points="0,-15 10,8 0,4 -10,8" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="16" y="4" font-family="monospace" font-size="9" fill="#A855F7">ESCORT-B</text>
+  </g>
+
+  <!-- Enemy Contact Blips (Red/Orange) -->
+  <g transform="translate(460, 110)">
+    <circle cx="0" cy="0" r="6" fill="#EF4444" filter="url(#stratGlow)" />
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="2 2" />
+    <text x="12" y="4" font-family="monospace" font-size="9" fill="#F87171">HOSTILE-04</text>
+  </g>
+
+  <!-- Bottom Details Overlay -->
+  <rect x="0" y="360" width="800" height="90" fill="#090D16" opacity="0.88" />
+  
+  <!-- Category Badge -->
+  <rect x="36" y="380" width="102" height="26" rx="6" fill="#4338CA" fill-opacity="0.25" stroke="#6366F1" stroke-width="1.2" />
+  <circle cx="48" cy="393" r="3" fill="#818CF8" />
+  <text x="58" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#C7D2FE">STRATEGY</text>
+
+  <!-- Coming Soon Badge -->
+  <rect x="148" y="380" width="112" height="26" rx="6" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1.2" />
+  <circle cx="160" cy="393" r="3.5" fill="#F59E0B" />
+  <text x="170" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1" fill="#FDE68A">COMING SOON</text>
+
+  <!-- Title -->
+  <text x="36" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" letter-spacing="1" fill="#FFFFFF">
+    GALACTIC TACTICS: VOID
+  </text>
+</svg>

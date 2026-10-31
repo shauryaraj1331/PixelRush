@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090514" />
+      <stop offset="40%" stop-color="#1F0D3D" />
+      <stop offset="70%" stop-color="#3B0764" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <radialGradient id="cyberSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="30%" stop-color="#F43F5E" />
+      <stop offset="75%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#3B0764" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="neonCyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="neonPurpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <filter id="driftGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="800" height="450" fill="url(#cyberSky)" />
+
+  <!-- Retro Synthwave Sun at Horizon -->
+  <circle cx="400" cy="230" r="120" fill="url(#cyberSun)" filter="url(#driftGlow)" opacity="0.85" />
+  <!-- Sun Blinds / Horizontal Bars -->
+  <rect x="270" y="225" width="260" height="3" fill="#090514" />
+  <rect x="275" y="235" width="250" height="4" fill="#090514" />
+  <rect x="282" y="247" width="236" height="6" fill="#090514" />
+  <rect x="290" y="261" width="220" height="8" fill="#090514" />
+
+  <!-- Distant Cyber City Skyline Silhouettes -->
+  <polygon points="120,250 120,190 140,190 140,250" fill="#0B0E17" />
+  <polygon points="145,250 145,170 160,150 175,170 175,250" fill="#0D1322" />
+  <polygon points="180,250 180,205 210,205 210,250" fill="#0B0E17" />
+  <polygon points="215,250 215,180 240,180 240,250" fill="#131B2E" />
+  
+  <polygon points="560,250 560,185 585,185 585,250" fill="#131B2E" />
+  <polygon points="590,250 590,165 610,165 610,250" fill="#0B0E17" />
+  <polygon points="615,250 615,195 645,195 645,250" fill="#0D1322" />
+  <polygon points="650,250 650,175 670,155 690,175 690,250" fill="#0B0E17" />
+
+  <!-- Ground Grid Floor -->
+  <rect x="0" y="250" width="800" height="200" fill="#080C16" />
+  
+  <!-- Perspective Road Lines -->
+  <g stroke="#06B6D4" stroke-opacity="0.6" stroke-width="1.5">
+    <line x1="0" y1="250" x2="800" y2="250" stroke="#C084FC" stroke-width="2" />
+    <line x1="0" y1="262" x2="800" y2="262" />
+    <line x1="0" y1="280" x2="800" y2="280" />
+    <line x1="0" y1="305" x2="800" y2="305" stroke-width="2" />
+    <line x1="0" y1="340" x2="800" y2="340" stroke-width="2.5" />
+    <line x1="0" y1="390" x2="800" y2="390" stroke-width="3" stroke="#A855F7" />
+    
+    <!-- Vanishing Lines from horizon center -->
+    <line x1="400" y1="250" x2="0" y2="450" />
+    <line x1="400" y1="250" x2="150" y2="450" />
+    <line x1="400" y1="250" x2="280" y2="450" stroke="#00F0FF" stroke-width="2.5" />
+    <line x1="400" y1="250" x2="520" y2="450" stroke="#00F0FF" stroke-width="2.5" />
+    <line x1="400" y1="250" x2="650" y2="450" />
+    <line x1="400" y1="250" x2="800" y2="450" />
+  </g>
+
+  <!-- Speed Light Trails -->
+  <path d="M400,250 Q360,290 290,340" stroke="#00F0FF" stroke-width="4" fill="none" opacity="0.8" filter="url(#driftGlow)" />
+  <path d="M400,250 Q430,290 490,340" stroke="#EC4899" stroke-width="4" fill="none" opacity="0.8" filter="url(#driftGlow)" />
+
+  <!-- Cyber Drift Car (Back Perspective) -->
+  <g transform="translate(330, 275)">
+    <!-- Cyan Underglow -->
+    <ellipse cx="70" cy="55" rx="90" ry="12" fill="#00F0FF" opacity="0.6" filter="url(#driftGlow)" />
+    
+    <!-- Wheels -->
+    <rect x="-10" y="32" width="24" height="24" rx="4" fill="#020617" stroke="#334155" stroke-width="2" />
+    <rect x="126" y="32" width="24" height="24" rx="4" fill="#020617" stroke="#334155" stroke-width="2" />
+
+    <!-- Car Body Rear -->
+    <polygon points="10,48 130,48 120,20 20,20" fill="#0F172A" stroke="#1E293B" stroke-width="2" />
+    <polygon points="20,20 120,20 105,-2 35,-2" fill="#1E293B" />
+    
+    <!-- Rear Windshield -->
+    <polygon points="38,0 102,0 95,16 45,16" fill="#0284C7" opacity="0.6" />
+
+    <!-- Neon Cyber Tail-light Bar -->
+    <rect x="18" y="24" width="104" height="6" rx="3" fill="#EC4899" filter="url(#driftGlow)" />
+    <rect x="22" y="25" width="96" height="3" rx="1.5" fill="#FFFFFF" />
+
+    <!-- Twin Exhaust Flare -->
+    <circle cx="45" cy="42" r="5" fill="#00F0FF" filter="url(#driftGlow)" />
+    <circle cx="95" cy="42" r="5" fill="#00F0FF" filter="url(#driftGlow)" />
+
+    <!-- Cyber GT Spoiler -->
+    <rect x="10" y="8" width="120" height="4" rx="2" fill="#334155" />
+    <rect x="30" y="12" width="6" height="8" fill="#1E293B" />
+    <rect x="104" y="12" width="6" height="8" fill="#1E293B" />
+  </g>
+
+  <!-- Bottom Details Overlay -->
+  <rect x="0" y="360" width="800" height="90" fill="#090D16" opacity="0.88" />
+  
+  <!-- Category Badge -->
+  <rect x="36" y="380" width="90" height="26" rx="6" fill="#E11D48" fill-opacity="0.2" stroke="#FB7185" stroke-width="1.2" />
+  <circle cx="48" cy="393" r="3" fill="#F43F5E" />
+  <text x="58" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#FECDD3">RACING</text>
+
+  <!-- Coming Soon Badge -->
+  <rect x="136" y="380" width="112" height="26" rx="6" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1.2" />
+  <circle cx="148" cy="393" r="3.5" fill="#F59E0B" />
+  <text x="158" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1" fill="#FDE68A">COMING SOON</text>
+
+  <!-- Title -->
+  <text x="36" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" letter-spacing="1" fill="#FFFFFF">
+    NEON DRIFT: CYBER GP
+  </text>
+</svg>

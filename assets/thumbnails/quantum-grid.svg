@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="gridBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="45%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <linearGradient id="cubeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="cubePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="cubeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <filter id="puzzleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#gridBg)" />
+
+  <!-- Background Hex Matrix Pattern -->
+  <g stroke="#1E293B" stroke-width="1.2" fill="none" opacity="0.35">
+    <polygon points="100,50 140,50 160,85 140,120 100,120 80,85" />
+    <polygon points="180,50 220,50 240,85 220,120 180,120 160,85" />
+    <polygon points="260,50 300,50 320,85 300,120 260,120 240,85" />
+    <polygon points="500,50 540,50 560,85 540,120 500,120 480,85" />
+    <polygon points="580,50 620,50 640,85 620,120 580,120 560,85" />
+    <polygon points="660,50 700,50 720,85 700,120 660,120 640,85" />
+  </g>
+
+  <!-- Circuit Conduits glowing across board -->
+  <g stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.7" filter="url(#puzzleGlow)">
+    <path d="M120,200 H 280 L 340,240 H 460 L 520,200 H 680" />
+    <path d="M200,280 H 320 L 380,310 H 480" />
+    <path d="M300,120 V 180 L 360,220" />
+    <circle cx="280" cy="200" r="4" fill="#00F0FF" />
+    <circle cx="520" cy="200" r="4" fill="#00F0FF" />
+    <circle cx="340" cy="240" r="5" fill="#E879F9" stroke="#A855F7" stroke-width="2" />
+    <circle cx="460" cy="240" r="5" fill="#E879F9" stroke="#A855F7" stroke-width="2" />
+  </g>
+
+  <!-- Central Isometric Puzzle Platform -->
+  <g transform="translate(400, 200)">
+    <!-- Base Board Shadow -->
+    <polygon points="0,-60 160,20 0,100 -160,20" fill="#0B132B" opacity="0.9" stroke="#334155" stroke-width="1.5" />
+    <polygon points="-160,20 0,100 0,125 -160,45" fill="#060C1E" />
+    <polygon points="160,20 0,100 0,125 160,45" fill="#040816" />
+
+    <!-- Isometric Grid lines on base -->
+    <line x1="-80" y1="-20" x2="80" y2="60" stroke="#1E293B" stroke-width="1.5" />
+    <line x1="80" y1="-20" x2="-80" y2="60" stroke="#1E293B" stroke-width="1.5" />
+
+    <!-- Cube 1 (Left - Cyan) -->
+    <g transform="translate(-70, 0)">
+      <polygon points="0,-35 30,-20 0,-5 -30,-20" fill="url(#cubeCyan)" filter="url(#puzzleGlow)" />
+      <polygon points="-30,-20 0,-5 0,25 -30,10" fill="#0284C7" />
+      <polygon points="30,-20 0,-5 0,25 30,10" fill="#0369A1" />
+    </g>
+
+    <!-- Cube 2 (Right - Purple) -->
+    <g transform="translate(70, 0)">
+      <polygon points="0,-35 30,-20 0,-5 -30,-20" fill="url(#cubePurple)" filter="url(#puzzleGlow)" />
+      <polygon points="-30,-20 0,-5 0,25 -30,10" fill="#7C3AED" />
+      <polygon points="30,-20 0,-5 0,25 30,10" fill="#6D28D9" />
+    </g>
+
+    <!-- Cube 3 (Center Elevated Quantum Core - Gold / Cyan Fusion) -->
+    <g transform="translate(0, -45)">
+      <!-- Levitating aura rings -->
+      <ellipse cx="0" cy="15" rx="35" ry="12" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.8" />
+      <polygon points="0,-45 40,-25 0,-5 -40,-25" fill="url(#cubeGold)" filter="url(#puzzleGlow)" />
+      <polygon points="-40,-25 0,-5 0,35 -40,15" fill="#B45309" />
+      <polygon points="40,-25 0,-5 0,35 40,15" fill="#92400E" />
+      <!-- Power glyph in center -->
+      <circle cx="0" cy="-25" r="8" fill="#FEF08A" filter="url(#puzzleGlow)" />
+    </g>
+
+    <!-- Floating Spark Particles -->
+    <circle cx="-35" cy="-80" r="2.5" fill="#00F0FF" filter="url(#puzzleGlow)" />
+    <circle cx="45" cy="-70" r="2" fill="#E879F9" filter="url(#puzzleGlow)" />
+    <circle cx="10" cy="-110" r="3" fill="#FDE047" filter="url(#puzzleGlow)" />
+  </g>
+
+  <!-- Bottom Details Overlay -->
+  <rect x="0" y="360" width="800" height="90" fill="#090D16" opacity="0.88" />
+  
+  <!-- Category Badge -->
+  <rect x="36" y="380" width="90" height="26" rx="6" fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1.2" />
+  <circle cx="48" cy="393" r="3" fill="#38BDF8" />
+  <text x="58" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#BAE6FD">PUZZLE</text>
+
+  <!-- Coming Soon Badge -->
+  <rect x="136" y="380" width="112" height="26" rx="6" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1.2" />
+  <circle cx="148" cy="393" r="3.5" fill="#F59E0B" />
+  <text x="158" y="397" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1" fill="#FDE68A">COMING SOON</text>
+
+  <!-- Title -->
+  <text x="36" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" letter-spacing="1" fill="#FFFFFF">
+    QUANTUM GRID: CIPHER
+  </text>
+</svg>

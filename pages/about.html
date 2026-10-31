@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>About PixelRush — Play. Explore. Repeat. | Next-Gen Browser Gaming</title>
+  <meta name="description" content="Learn about PixelRush: our mission to bring fast, frictionless, high-quality browser games directly to players worldwide without downloads or paywalls.">
+  <meta name="theme-color" content="#060911">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Logo -->
+      <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+        <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#browse" class="nav-link">Browse Games</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="../index.html#browse" class="nav-search-btn" id="nav-search-btn" aria-label="Search games">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd>/</kbd>
+        </a>
+
+        <a href="../games/space-survivor.html" class="btn btn-sm btn-cyan">
+          Play Now
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#browse" class="mobile-nav-link">Browse Games</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="about.html" class="mobile-nav-link active">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact &amp; FAQ</a></li>
+      </ul>
+      <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+        <a href="../games/space-survivor.html" class="btn btn-primary" style="width: 100%;">
+          Play Space Survivor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <!-- =====================================================================
+           2. ABOUT HERO
+           ===================================================================== -->
+      <section class="page-hero">
+        <div class="badge badge-purple" style="margin-bottom: 1rem;">
+          <span class="badge-dot"></span>
+          ABOUT PIXELRUSH
+        </div>
+        <h1 class="page-hero-title">
+          BUILT FOR <span class="gradient-text-purple-cyan">INSTANT ACTION</span>
+        </h1>
+        <p class="page-hero-sub">
+          PixelRush was created with one simple conviction: gaming should be immediate, accessible, and thrilling. No installers, no accounts, no waiting.
+        </p>
+      </section>
+
+      <!-- =====================================================================
+           3. CORE PILLARS
+           ===================================================================== -->
+      <section>
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Frictionless Play</h3>
+            <p class="pillar-text">
+              Jump straight into any title with a single click. Every game runs natively in modern web browsers using HTML5, WebGL, and canvas technologies.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Curated Quality</h3>
+            <p class="pillar-text">
+              We focus on craft rather than overwhelming clutter. Every game on PixelRush is selected for responsive controls, engaging loops, and aesthetic polish.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Responsive Design</h3>
+            <p class="pillar-text">
+              From desktop rigs with mechanical keyboards to tablets and smartphones on the go, our player layouts scale smoothly to deliver consistent gameplay.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           4. PLATFORM ARCHITECTURE & TECH
+           ===================================================================== -->
+      <section class="section" style="padding-top: 1rem;">
+        <div class="about-tech-card">
+          
+          <div>
+            <div class="badge badge-cyan" style="margin-bottom: 0.85rem;">
+              ARCHITECTURE
+            </div>
+            <h2 style="font-size: 2rem; font-weight: 900; margin-bottom: 1rem;">
+              Pure Web Standards. Zero Bloat.
+            </h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.25rem;">
+              Version 1.0 of PixelRush is built exclusively with semantic HTML5, modern CSS3, and modular vanilla JavaScript. By eliminating heavy JavaScript frameworks, third-party trackers, and bloated bundles, our pages load virtually instantaneously on any connection.
+            </p>
+            <ul style="color: var(--text-secondary); list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem;">
+              <li style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Deployable as an ultra-fast static website on Cloudflare Pages.</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>HTML5 Fullscreen API integration for distraction-free gameplay.</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Modular game catalogue architecture prepared for seamless expansion.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+              <span style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-muted);">pixelrush-core.config</span>
+              <span class="badge badge-success">v1.0.0</span>
+            </div>
+            <pre style="font-family: var(--font-mono); font-size: 0.85rem; color: #22D3EE; overflow-x: auto; line-height: 1.6;"><code>{
+  "name": "PixelRush",
+  "tagline": "Play. Explore. Repeat.",
+  "engine": "HTML5 / Vanilla JS",
+  "styles": "Modern CSS3 Tokens",
+  "cdn": "Cloudflare Pages Edge",
+  "firstFeatured": "Space Survivor",
+  "telemetry": "Zero Tracking"
+}</code></pre>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           5. PLATFORM ROADMAP
+           ===================================================================== -->
+      <section class="section" id="roadmap">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+            <span>Future Evolution</span>
+          </div>
+          <h2 class="section-title">Development Roadmap</h2>
+          <p class="section-desc">We are continuously expanding the PixelRush portal. Here is a look at what is ahead.</p>
+        </div>
+
+        <div class="roadmap-timeline">
+          
+          <div class="roadmap-item">
+            <div class="roadmap-phase">
+              <span class="badge badge-success">VERSION 1.0</span>
+              <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem;">CURRENT</div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.4rem;">
+                Platform Foundation &amp; Space Survivor Launch
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                Clean responsive dark aesthetic, dynamic game catalogue engine, real-time client-side search, genre filters, and embedded responsive player for our flagship launch title Space Survivor.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-phase">
+              <span class="badge badge-purple">VERSION 1.1</span>
+              <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem;">PLANNED</div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.4rem;">
+                Catalogue Expansion &amp; Favorites
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                Introduction of new original browser games across racing and puzzle genres, local browser bookmarking of favourite titles, and quick-resume shortcuts.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-phase">
+              <span class="badge badge-cyan">VERSION 1.2</span>
+              <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem;">FUTURE</div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF; margin-bottom: 0.4rem;">
+                Controller Support &amp; Local High Scores
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                Gamepad API integration for physical game controller navigation, community feedback implementation, and local offline high-score tracking.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="../games/space-survivor.html" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Play Space Survivor Now
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       6. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo" aria-label="PixelRush Home">
+            <img src="../assets/logo/logo.svg" alt="PixelRush" class="brand-logo-img" width="180" height="42">
+          </a>
+          <p class="footer-brand-desc">
+            PixelRush is a modern browser gaming portal built for fast, frictionless gaming. Discover curated indie titles, launch them directly in your browser, and play anywhere.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--cyan-primary); font-weight: 700;">
+            TAGLINE: Play. Explore. Repeat.
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="../index.html#browse" class="footer-link">Browse Games</a></li>
+            <li><a href="../index.html#categories" class="footer-link">Categories</a></li>
+            <li><a href="about.html" class="footer-link">About PixelRush</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Games -->
+        <div>
+          <h4 class="footer-col-title">Games</h4>
+          <ul class="footer-links">
+            <li><a href="../games/space-survivor.html" class="footer-link">Space Survivor (Active)</a></li>
+            <li><a href="#roadmap" class="footer-link" style="color: var(--text-muted);">Future Titles (On Roadmap)</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Info -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link" style="color: var(--text-muted);">Version 1.0 (Static)</span></li>
+            <li><span class="footer-link" style="color: var(--text-muted);">Cloudflare Pages Edge</span></li>
+            <li><a href="#roadmap" class="footer-link">Roadmap &amp; Updates</a></li>
+            <li><a href="contact.html" class="footer-link">Support &amp; Feedback</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PixelRush. All rights reserved. Play. Explore. Repeat.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="../index.html" class="footer-link">Privacy Policy</a>
+          <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span>Top</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+</body>
+</html>
